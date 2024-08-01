@@ -28,3 +28,48 @@ var data = {
 for (var elem in data){
     console.log(elem, data[elem]);
 }
+
+//Loping over an object
+
+const person = {
+    id: 252,
+    username: "dcode",
+    age: 32,
+    hobbies: ["Software Development", "Gardening"],
+    active: true
+};
+
+const entries = Object.entries(person);
+
+for (const key in person){
+    if(person.hasOwnProperty(key)){
+        console.log(person[key]);
+    }
+}
+
+// JavaScript program to find the most frequent element in an array 
+function mostFrequent(arr, n) { 
+
+	let maxcount = 0; 
+	let element_having_max_freq; 
+	for (let i = 0; i < n; i++) { 
+		let count = 0; 
+		for (let j = 0; j < n; j++) { 
+			if (arr[i] == arr[j]) 
+				count++; 
+		} 
+
+		if (count > maxcount) { 
+			maxcount = count; 
+			element_having_max_freq = arr[i]; 
+		} 
+	} 
+
+	return element_having_max_freq; 
+} 
+
+// Driver Code 
+
+let arr = [40, 50, 30, 40, 50, 30, 30]; 
+let n = arr.length; 
+console.log(mostFrequent(arr, n)); 
