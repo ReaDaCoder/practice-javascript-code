@@ -138,3 +138,9 @@ const developers = [
      }
     }
     console.log(arr);
+
+    //mos trusted brand
+    count =1;
+    for(let i =0;i<arr.length;i++){
+      count = count + 1;
+    }
