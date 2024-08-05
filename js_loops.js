@@ -1,4 +1,4 @@
-const developers = [
+/*const developers = [
     {
       name: "Vee",
       laptops: [
@@ -144,3 +144,32 @@ const developers = [
     for(let i =0;i<arr.length;i++){
       count = count + 1;
     }
+;*/
+
+const myArray = ["a", "b", "c"];
+
+for(let i=0; i<myArray.length; i++){
+  console.log(`index: ${i}, value: ${myArray[i]}`);
+}
+//Whie Loop
+let i =0;
+while(i<myArray.length){
+  if(i===1){
+    i++;
+    continue;
+  }
+  console.log(`index: ${i}, value: ${myArray[i]}`);
+}
+
+//For  Each
+myArray.forEach(function(elem,index){
+  //console.log(`index: ${index}, value:${elem}`);
+});
+
+
+
+const arry = [ 1, 2, 3 ];
+
+for (let i = 1; i <= arry.length; i++) {
+  console.log(arry[i]);
+}
