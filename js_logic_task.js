@@ -1,6 +1,6 @@
 let numbers = [  3, 56, 23, 78, 23, 78, 100, 123, 148, 193, 190, -190, 210, 34, 67, 3, 78, 210, 34, 34, 50, 59, 89, 87, 230, 210, 100, 23, 980];
 
-//Sort the numbers from lowest to highest
+/*//Sort the numbers from lowest to highest
  function ascending(a,b){
     return a-b;
  }
@@ -71,3 +71,29 @@ if(i/2 || i/3){
  let reverseElements = numbers.slice(0,28);
  let finalReverse = reverseElements.reverse();
  console.log(finalReverse);
+
+
+ //Using a for loop and a variable, return all values that are numbers.
+
+ let digits = [];
+ for(i=0; i<info.length;i++){
+   if(typeof info[i] === 'number'){
+      digits.push(info[i]);
+   }
+ }
+ console.log(digits);*/
+
+ let info = [7, 10, "Clentan", 13, 89, true, 45, false, "Jerry", "Vukona", "Reabetswe", 600. ];
+
+ //Using a while loop and a variable, return all values that are strings
+ let text = [];
+ let i=0;
+ while(i<info.length){
+   if(typeof info[i] === 'string'){
+      i++;
+      text.push(info[i]);
+   }
+ }
+ console.log(text);
+
+ //Using a do while loop, return the sum of all values in the array
