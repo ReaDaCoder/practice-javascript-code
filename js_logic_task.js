@@ -73,17 +73,18 @@ if(i/2 || i/3){
  console.log(finalReverse);
 */
 
+
+let info = [7, 10, "Clentan", 13, 89, true, 45, false, "Jerry", "Vukona", "Reabetswe", 600. ];
  //Using a for loop and a variable, return all values that are numbers.
 
  let digits = [];
- for(i=0; i<info.length;i++){
-   if(typeof info[i] === 'number'){
-      digits.push(info[i]);
+ for(p=0; p<info.length;p++){
+   if(typeof info[p] === 'number'){
+      digits.push(info[p]);
    }
  }
  console.log(digits);
 
- let info = [7, 10, "Clentan", 13, 89, true, 45, false, "Jerry", "Vukona", "Reabetswe", 600. ];
 
  //Using a while loop and a variable, return all values that are strings
  let text = [];
@@ -110,3 +111,8 @@ if(i/2 || i/3){
  for(let name=0; name< names.length; name++){
    console.log(`Hello, ${names[name]}`);
  }
+
+ //spread operator
+ const fruits = ["apple", "pear", "mango", "orange", "banana", "cherry", "grapes", "peach"];
+const fruitsPicklist = [...fruits, ...fruits];
+console.log(fruitsPicklist);
