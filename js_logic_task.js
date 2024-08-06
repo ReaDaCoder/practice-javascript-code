@@ -71,7 +71,7 @@ if(i/2 || i/3){
  let reverseElements = numbers.slice(0,28);
  let finalReverse = reverseElements.reverse();
  console.log(finalReverse);
-
+*/
 
  //Using a for loop and a variable, return all values that are numbers.
 
@@ -81,7 +81,7 @@ if(i/2 || i/3){
       digits.push(info[i]);
    }
  }
- console.log(digits);*/
+ console.log(digits);
 
  let info = [7, 10, "Clentan", 13, 89, true, 45, false, "Jerry", "Vukona", "Reabetswe", 600. ];
 
@@ -97,3 +97,16 @@ if(i/2 || i/3){
  console.log(text);
 
  //Using a do while loop, return the sum of all values in the array
+ let sumOf = 0;
+ let x=0;
+ while(x<digits.length){
+      x++;
+      sumOf = sumOf +x;
+ }
+ console.log(sumOf);
+
+ //Using any looping structure of your choice and a variable, combine all the strings to form a proper greeting that follows the basic English grammar standards. Eg “Hello, Sarah, Thabo, and Mariah.”.
+ let names = ["Clenten", "Jerry", "Vukona", "Reabetswe"];
+ for(let name=0; name< names.length; name++){
+   console.log(`Hello, ${names[name]}`);
+ }
