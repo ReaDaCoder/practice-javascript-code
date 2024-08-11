@@ -19,3 +19,10 @@ const products = [
 
 const totalProductsValue = products.map(item => item.price * item.count);
 console.log(totalProductsValue);
+
+function showCity(response){
+    console.log(response);
+}
+
+let api = "http://api.weatherapi.com/v1/current.json?key=58ba20b08f854e3da23163958241108&q=London&aqi=yes";
+axios.get(api).then(showCity);
