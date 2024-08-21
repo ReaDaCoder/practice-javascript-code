@@ -58,3 +58,12 @@ let url = `http://api.weatherapi.com/v1/current.json?key=58ba20b08f854e3da231639
         console.log(url);
         axios.get(url).then(updateWeather).catch((error)=>console.log(error));
     }
+
+    /*const updateWeather = (response) =>{
+    let weatherTemp = document.querySelector("#weather-temperature");
+    let temp = response.data.current.temp_c;
+    console.log(weatherTemp);
+    console.log(response);
+    weatherTemp.innerHTML = temp;
+    console.log(weatherTemp);
+}*/
